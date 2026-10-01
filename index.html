@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
 <script>(function(){var r=document.documentElement;r.classList.remove('no-js');
 /* la firma: finché main.js non parte sul vassoio c'è la focaccina aperta e vuota; se il codice non arriva, dopo 2,5 s è finita (stato finale) */
 try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add('firma-attesa');window.__attesaFocaccina=setTimeout(function(){r.classList.remove('firma-attesa')},2500)}}catch(e){}})()</script>
@@ -20,15 +21,74 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;500;600;700&amp;family=Merienda:wght@600;700;800&amp;family=Oleo+Script+Swash+Caps&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fonts/fonts.css?v=1">
 <link rel="stylesheet" href="css/styles.css?v=1">
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
 <script src="js/main.js?v=1" defer></script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Bakery","name":"Bontà senza Glutine","description":"Bar, pasticceria e panetteria tutto senza glutine in Via Ettore Ponti 53 a Milano: colazione, pranzo, merenda e brunch del sabato, torte su ordinazione.","url":"https://rotenzark.github.io/bonta-senza-glutine-barona/","image":"https://rotenzark.github.io/bonta-senza-glutine-barona/img/og.jpg","telephone":"+39 02 8703 4259","email":"b.senzaglutine@gmail.com","address":{"@type":"PostalAddress","streetAddress":"Via Ettore Ponti 53","postalCode":"20143","addressLocality":"Milano","addressRegion":"MI","addressCountry":"IT"},"geo":{"@type":"GeoCoordinates","latitude":45.44122,"longitude":9.15211},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":"Monday","opens":"07:30","closes":"13:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday"],"opens":"07:30","closes":"14:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday"],"opens":"16:00","closes":"18:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"08:00","closes":"12:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.5","reviewCount":"101","bestRating":"5"}}
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "Bontà senza Glutine",
+  "description": "Bar, pasticceria e panetteria tutto senza glutine in Via Ettore Ponti 53 a Milano: colazione, pranzo, merenda e brunch del sabato, torte su ordinazione.",
+  "url": "https://rotenzark.github.io/bonta-senza-glutine-barona/",
+  "image": "https://rotenzark.github.io/bonta-senza-glutine-barona/img/og.jpg",
+  "telephone": "+39 02 8703 4259",
+  "email": "b.senzaglutine@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Ettore Ponti 53",
+    "postalCode": "20143",
+    "addressLocality": "Milano",
+    "addressRegion": "MI",
+    "addressCountry": "IT"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.44122,
+    "longitude": 9.15211
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Monday",
+      "opens": "07:30",
+      "closes": "13:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "07:30",
+      "closes": "14:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "16:00",
+      "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "08:00",
+      "closes": "12:00"
+    }
+  ]
+}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
@@ -87,7 +147,7 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
       <p class="logo" aria-hidden="true"><span>Bontà</span> <span>senza</span> <span>Glutine</span></p>
       <h1 id="titolo" class="apertura__titolo" data-i18n="h.titolo">Tutto senza glutine, dal dolce al salato.</h1>
       <p class="apertura__frase" data-i18n="h.testo">Colazione, pranzo e merenda alla Barona: brioche e torte, focaccine farcite, pizzette e i piatti del pranzo, fatti da loro. Il banco è tutto senza glutine: si sceglie senza chiedere.</p>
-      <p class="apertura__citazione"><span>«Quasi non ti accorgi della differenza.»</span> <span class="apertura__chi" data-i18n="h.chi">da una recensione su Google</span></p>
+      <p class="apertura__citazione"><span lang="it">«Quasi non ti accorgi della differenza.»</span> <span class="apertura__chi" data-i18n="h.chi">da una recensione su Google</span></p>
       <div class="voti">
         <p class="voto"><b class="voto__n">4,5</b> <span class="voto__su" data-i18n="h.google">su Google, 101 recensioni</span></p>
       </div>
@@ -221,12 +281,12 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
       <p class="voto"><b class="voto__n">4,5</b> <span class="voto__su" data-i18n="d.google">su Google, 101 recensioni</span></p>
     </div>
     <ul class="recensioni">
-      <li class="recensione reveal"><p class="recensione__testo">«Pasticceria strepitosa, personale gentilissimo e molto attento. Hanno esaudito ogni nostro desiderio! Anche pane e focacce molto buoni, bravissimi nel preparare buffet per feste»</p><p class="recensione__chi"><b>Fabiana Casolo</b> <span data-i18n="d.g7m">Google, 7 mesi fa</span></p></li>
-      <li class="recensione reveal"><p class="recensione__testo">«Eravamo a Milano per lavoro e per pranzo cercavamo un posto senza glutine nei dintorni e c’erano loro 😍 ci siamo tornate per ben 2 lunedì di seguito e ci torneremo ancora e ancora !!! È tutto buonissimo dal salato al dolce e la focaccia è da volar via che ti servono con tutto ciò che vuoi all’interno. Le proprietarie sono di una gentilezza unica e la qualità prezzo è ottima ! Vi consiglio vivamente di andare a trovarle soprattutto se celiache ( è il nostro paradiso ) !»</p><p class="recensione__chi"><b>francesca piscanec</b> <span data-i18n="d.g3a">Google, 3 anni fa</span></p></li>
-      <li class="recensione reveal"><p class="recensione__testo">«Sono andata questa mattina a fare colazione con due mie amiche. Brioches buonissime e personale gentile. Prezzi super onesti. Anche se non siamo di Milano ci ritorneremo super volentieri»</p><p class="recensione__chi"><b>Chiara Baiardi</b> <span data-i18n="d.g2m">Google, 2 mesi fa</span></p></li>
-      <li class="recensione reveal"><p class="recensione__testo">«Bontà, disponibilità e cortesia sono gli ingredienti di questo delizioso locale. Ho organizzato una piccola festa ed è stato tutto curato con attenzione! I piatti salati buonissimi e il dolce al cucchiaio ancora di più. Le amiche non celiache si aspettavano qualche differenza di gusto e invece sono state stupite. Consigliato!»</p><p class="recensione__chi"><b>Daniela Compostella</b> <span data-i18n="d.g3a">Google, 3 anni fa</span></p></li>
-      <li class="recensione reveal"><p class="recensione__testo">«Deliziosa pasticceria di dolci e salati senza glutine e talora senza lattosio, e ciononostante sono gustosi e non sembrano assolutamente inferiori ai prodotti da forno con glutine. Complimenti 👏🏻👏🏻alle due titolari perché sono davvero delle brave pasticcere e panettiere, e nei loro prodotti senti proprio la ricercatezza e l&#39;attenzione per un sapore gustoso. Sono felicissima di avere conosciuto questo negozio. Consigliatissimo.»</p><p class="recensione__chi"><b>Katia Sesana</b> <span data-i18n="d.g4a">Google, 4 anni fa</span></p></li>
-      <li class="recensione reveal"><p class="recensione__testo">«Prodotti di pasticceria buonissimi, personale alla mano, locale tranquillo e perfetto per una pausa merenda. Tornerò sicuramente!»</p><p class="recensione__chi"><b>Marta Piria</b> <span data-i18n="d.g7m">Google, 7 mesi fa</span></p></li>
+      <li class="recensione reveal"><p lang="it" class="recensione__testo">«Pasticceria strepitosa, personale gentilissimo e molto attento. Hanno esaudito ogni nostro desiderio! Anche pane e focacce molto buoni, bravissimi nel preparare buffet per feste»</p><p class="recensione__chi"><b>Fabiana Casolo</b> <span data-i18n="d.g7m">Google, 7 mesi fa</span></p></li>
+      <li class="recensione reveal"><p lang="it" class="recensione__testo">«Eravamo a Milano per lavoro e per pranzo cercavamo un posto senza glutine nei dintorni e c’erano loro 😍 ci siamo tornate per ben 2 lunedì di seguito e ci torneremo ancora e ancora !!! È tutto buonissimo dal salato al dolce e la focaccia è da volar via che ti servono con tutto ciò che vuoi all’interno. Le proprietarie sono di una gentilezza unica e la qualità prezzo è ottima ! Vi consiglio vivamente di andare a trovarle soprattutto se celiache ( è il nostro paradiso ) !»</p><p class="recensione__chi"><b>francesca piscanec</b> <span data-i18n="d.g3a">Google, 3 anni fa</span></p></li>
+      <li class="recensione reveal"><p lang="it" class="recensione__testo">«Sono andata questa mattina a fare colazione con due mie amiche. Brioches buonissime e personale gentile. Prezzi super onesti. Anche se non siamo di Milano ci ritorneremo super volentieri»</p><p class="recensione__chi"><b>Chiara Baiardi</b> <span data-i18n="d.g2m">Google, 2 mesi fa</span></p></li>
+      <li class="recensione reveal"><p lang="it" class="recensione__testo">«Bontà, disponibilità e cortesia sono gli ingredienti di questo delizioso locale. Ho organizzato una piccola festa ed è stato tutto curato con attenzione! I piatti salati buonissimi e il dolce al cucchiaio ancora di più. Le amiche non celiache si aspettavano qualche differenza di gusto e invece sono state stupite. Consigliato!»</p><p class="recensione__chi"><b>Daniela Compostella</b> <span data-i18n="d.g3a">Google, 3 anni fa</span></p></li>
+      <li class="recensione reveal"><p lang="it" class="recensione__testo">«Deliziosa pasticceria di dolci e salati senza glutine e talora senza lattosio, e ciononostante sono gustosi e non sembrano assolutamente inferiori ai prodotti da forno con glutine. Complimenti 👏🏻👏🏻alle due titolari perché sono davvero delle brave pasticcere e panettiere, e nei loro prodotti senti proprio la ricercatezza e l&#39;attenzione per un sapore gustoso. Sono felicissima di avere conosciuto questo negozio. Consigliatissimo.»</p><p class="recensione__chi"><b>Katia Sesana</b> <span data-i18n="d.g4a">Google, 4 anni fa</span></p></li>
+      <li class="recensione reveal"><p lang="it" class="recensione__testo">«Prodotti di pasticceria buonissimi, personale alla mano, locale tranquillo e perfetto per una pausa merenda. Tornerò sicuramente!»</p><p class="recensione__chi"><b>Marta Piria</b> <span data-i18n="d.g7m">Google, 7 mesi fa</span></p></li>
     </ul>
     <p class="dicono__nota"><span data-i18n="d.nota">Dalle recensioni su Google, come sono state scritte. Anche la frase in alto viene da una recensione su Google.</span> <a href="https://www.google.com/maps/search/?api=1&amp;query=Bont%C3%A0+senza+Glutine%2C+Via+Ettore+Ponti+53%2C+Milano" target="_blank" rel="noopener" data-i18n="d.tutte">Tutte le recensioni su Google</a></p>
   </section>
@@ -249,7 +309,7 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
     <p class="fasce__nota" data-i18n="o.nota">Il sabato dalle 11 c&#39;è il brunch, su prenotazione. D&#39;estate l&#39;orario può cambiare: lo scrivono sulla loro pagina Facebook.</p>
     <div class="dove">
       <div class="cartina reveal">
-        <iframe title="Mappa: Bontà senza Glutine, Via Ettore Ponti 53, Milano" data-i18n-title="o.mappa" src="https://maps.google.com/maps?q=Bont%C3%A0%20senza%20Glutine%2C%20Via%20Ettore%20Ponti%2053%2C%20Milano&amp;z=16&amp;output=embed" width="600" height="400" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="mappa-clic" data-mappa-clic style="--mappa-h: 400px"><template><iframe title="Mappa: Bontà senza Glutine, Via Ettore Ponti 53, Milano" data-i18n-title="o.mappa" src="https://maps.google.com/maps?q=Bont%C3%A0%20senza%20Glutine%2C%20Via%20Ettore%20Ponti%2053%2C%20Milano&amp;z=16&amp;output=embed" width="600" height="400" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></template><div class="mappa-clic__velo"><a class="mappa-clic__btn" href="https://www.google.com/maps/search/?api=1&amp;query=Bont%C3%A0+senza+Glutine%2C+Via+Ettore+Ponti+53%2C+Milano" target="_blank" rel="noopener">Mostra la mappa</a><p class="mappa-clic__nota">La mappa è di Google: aprendola, Google riceve il tuo indirizzo IP e può usare i suoi cookie.</p></div></div>
       </div>
       <div class="dove__testo">
         <dl class="indirizzo">
@@ -285,7 +345,7 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
     <p class="logo logo--piede" aria-hidden="true"><span>Bontà</span> <span>senza</span> <span>Glutine</span></p>
     <p class="piede__dove">Via Ettore Ponti 53, 20143 Milano · <a href="tel:+390287034259" class="intero">02 8703 4259</a> · <a href="mailto:b.senzaglutine@gmail.com">b.senzaglutine@gmail.com</a></p>
     <p class="piede__orario" data-i18n="f2.orario">Lunedì 7:30–13 · martedì–venerdì 7:30–14 e 16–18 · sabato e domenica 8–12</p>
-    <p class="piede__cred" data-i18n="f2.cred">Sito dimostrativo realizzato da <a href="https://bespokestud.io" rel="noopener">Bespoke Studio</a> · le foto sono loro, dalla pagina Facebook e dalla scheda Google (tre di clienti); orari e recensioni da Google (settembre 2026). La focaccina l&#39;abbiamo disegnata noi.</p>
+    <p class="piede__cred" data-i18n="f2.cred">Sito dimostrativo realizzato da <a href="https://bespokestud.io" rel="noopener">Bespoke Studio</a> · <a href="privacy.html">Privacy</a> · le foto sono loro, dalla pagina Facebook e dalla scheda Google (tre di clienti); orari e recensioni da Google (settembre 2026). La focaccina l&#39;abbiamo disegnata noi.</p>
     <p><a class="piede__su" href="#inizio" data-i18n="f2.su">Torna su ↑</a></p>
   </div>
 </footer>
@@ -300,5 +360,6 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
   <img id="lightboxImg" src="" alt="">
 </div>
 
+<script src="js/mappa-clic.js?v=1" defer></script>
 </body>
 </html>
